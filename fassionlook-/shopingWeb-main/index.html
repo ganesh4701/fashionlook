@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>shop</title>
+  </head>
+  <body>
+    <!-- navBar Start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand logo" href="#">Fa$$ion.L00k</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+          <!-- <a class="nav-link active" href="#"
+            ><span class="sr-only">(current)</span></a
+          > -->
+          <a class="nav-link" id="navItem1" href="#">Mobiles</a>
+          <a class="nav-link" id="navItem2" href="#">Laptops</a>
+          <a class="nav-link" id="navItem3" href="#">Clothes</a>
+          <a class="nav-link" id="navItem4" href="#">Home needs</a>
+        </div>
+        <div class="login-section">
+          <button
+            type="button"
+            class="btn btn-bold"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Sign In
+          </button>
+          <button
+            type="button"
+            class="btn btn-bold"
+            data-toggle="modal"
+            data-target="#exampleModal1"
+          >
+            Sign Up
+          </button>
+          <span id="openCart">cart</span>
+        </div>
+      </div>
+    </nav>
+    <!-- navBar End-->
+
+    <!-- model signIn start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input
+              type="text"
+              placeholder="    Username   "
+              spellcheck="false"
+              name="Username"
+              required
+            />
+            <input
+              type="password"
+              placeholder="    Password    "
+              spellcheck="false"
+              name="Password"
+              required
+            />
+            <button type="submit" class="login-btn">Login</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- model signIn end -->
+
+    <!-- model signup Start -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body Registeration-mainbody">
+              <div>
+                <input type="text" id="username" placeholder="Username" />
+              </div>
+              <div>
+                <input type="email" id="email" placeholder="Email" /><br />
+              </div>
+              <div>
+                <input type="password" id="pass" placeholder="Password" /><br />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  id="cpass"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- model signUp end -->
+
+    <!-- Banner Start  -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide banner"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- <div class="carousel-item active">
+          <img src="img/6.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div> -->
+        <div class="carousel-item active">
+          <img src="img/4.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/7.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/9.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/13.jpg" id="" class="d-block w-100 img1" alt="..." />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Banner End  -->
+
+    <div class="cart hide" id="cart">
+      <div class="cartHead">
+        <p class="cart-close-btn">X</p>
+        <div class="cartImg">
+          <img height="100" width="150" src="img/cart.png" alt="" />
+        </div>
+      </div>
+      <div id="cartContainer" class="cart-content products-grid-view"></div>
+      <div class="total-price">
+        <h4>Total: <span id="totalPrice">0</span></h4>
+      </div>
+    </div>
+    <!-- main start  -->
+    <!-- <div class="main-title">
+      <h1 class="m-5">Products</h1>
+    </div> -->
+    <div id="randSection">
+      <div class="rand-title m-5">
+        <h1 class=""><img src="img/allp.png" alt="" /></h1>
+      </div>
+      <div class="container rand-container">
+        <div id="rand-products" class="products-grid-view"></div>
+      </div>
+    </div>
+    <!-- main end -->
+    <!-- mobile start -->
+
+    <div id="mobileSection" class="hide">
+      <div class="mob-title">
+        <h1 class="m-5"><img src="img/mobile.png" alt="" /></h1>
+      </div>
+      <div class="container mobile-container">
+        <div id="mobile-products" class="products-grid-view"></div>
+      </div>
+    </div>
+    <div id="laptopSection" class="hide">
+      <div class="lap-title m-5">
+        <h1><img src="img/laptop.png" alt="" /></h1>
+      </div>
+      <div class="container laptop-container">
+        <div id="laptop-products" class="products-grid-view"></div>
+      </div>
+    </div>
+    <div id="assetSection" class="hide">
+      <div class="ass-title m-5">
+        <h1>Clothes</h1>
+      </div>
+      <div class="container asset-container">
+        <div id="asset-products" class="products-grid-view"></div>
+      </div>
+    </div>
+    <div id="homeSection" class="hide">
+      <div class="home-title m-5">
+        <h1>Home need</h1>
+      </div>
+      <div class="container home-container">
+        <div id="home-products" class="products-grid-view"></div>
+      </div>
+    </div>
+    <!-- mobile end -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
